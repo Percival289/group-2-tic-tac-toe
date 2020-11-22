@@ -78,7 +78,6 @@ public class TicTacToe extends JFrame implements ActionListener {
 		String text1 = "", text2 = "";
 		int row = 0, col = 0;
 
-		// text inside rows
 		row = 0;
 		while (row < BOARD_SIZE) {
 			col = 0;
@@ -100,7 +99,6 @@ public class TicTacToe extends JFrame implements ActionListener {
 			row++;
 		}
 
-		// text inside cols
 		col = 0;
 		while (col < BOARD_SIZE) {
 			row = 0;
@@ -122,8 +120,6 @@ public class TicTacToe extends JFrame implements ActionListener {
 			col++;
 		}
 
-		// test in diagnol1
-
 		row = 0;
 		col = 0;
 		while (row < BOARD_SIZE - 1) {
@@ -142,8 +138,6 @@ public class TicTacToe extends JFrame implements ActionListener {
 				return GameStatus.Zwins;
 			}
 		}
-
-		// test in second diagnol
 
 		row = BOARD_SIZE - 1;
 		col = 0;
